@@ -1,0 +1,75 @@
+:root {
+  --color-bg: #f4c087;
+  --color-bg-gradient: linear-gradient(to bottom, #f4c087, #f4c087);
+
+  --color-head-bg: #f4c087;
+  --color-logotype-bg: #f4c087;
+  --color-text-logotype: #fff7f2;
+  --font-logotype-size: 1rem;
+
+  --color-menu-bg: #f4c087;
+
+  --color-link-bg: #ff6a2f;
+  --color-link-hover: #f8ebe4;
+  --color-link-active: #d25a27;
+  --border-radius-links: 999px;
+
+  --font-h1-size: 4rem;
+  --font-h2-size: 1.5rem;
+  --font-h3-size: 1.15rem;
+
+  --headline2-size: 1.5rem;
+  --headline3-size: 1.15rem;
+  --font-sub1-size: 1rem;
+
+  --color-headline-bg: #b86d56;
+
+  --color-text: #fffefe;
+
+  --followup-text-size: 1rem;
+  --margin-head-bottom: 0;
+  --border-radius: 28px;
+
+  --color-card-bg: #efefef;
+  --color-card-bg-inverted: #ff6a2f;
+  --color-cta-card-bg: #d66028;
+  --color-cta-card-bg-inverted: #d66028;
+
+  --font-family-sans: "Rubik", ui-sans-serif, system-ui, sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 300;
+  --font-weight-light: 200;
+
+  --color-info-bg: #f0d7cc;
+}
+
+.cards-left h2 {
+  color: #111111;
+}
+html.dark {
+  --color-bg: #121212;
+  --color-bg-gradient: linear-gradient(to bottom, #121212, #1a1a1a);
+
+  --color-head-bg: #181818;
+  --color-logotype-bg: #181818;
+  --color-text-logotype: #f7f1eb;
+
+  --color-menu-bg: #181818;
+
+  --color-link-bg: #a85f3b;
+  --color-link-hover: #b46b47;
+  --color-link-active: #955333;
+
+  --color-headline-bg: #9f5a38;
+
+  --color-text: #f3eee8;
+  --color-text-inverted: #fff7f2;
+
+  --color-card-bg: #9f5a38;
+  --color-card-bg-inverted: #9f5a38;
+  --color-cta-card-bg: #8f5031;
+  --color-cta-card-bg-inverted: #bc7a58;
+
+  --color-info-bg: #9f5a38;
+}

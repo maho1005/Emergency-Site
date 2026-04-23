@@ -1,0 +1,77 @@
+/* LAYOUT FOR MAIN CONTENT */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  display: grid;
+  row-gap: 1rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-rows: min-content min-content 1fr min-content;
+}
+
+main > *:not(:first-child) {
+  margin: 0 1rem;
+}
+
+#instruction main {
+  grid-template-rows: min-content min-content min-content 1fr min-content;
+}
+
+/* LAYOUT FOR HEADER AND FOOTER */
+header {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
+}
+
+header nav {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header nav > * {
+  flex: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header ul {
+  height: 100%;
+  width: clamp(175px, 50%, 300px);
+}
+
+/* LAYOUT FOR SECTIONS */
+@media (min-width: 601px) {
+  #instruction > main,
+  #register > main {
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: auto auto 1fr auto;
+    align-items: start;
+  }
+
+  .qr {
+    order: 1;
+  }
+
+  h1 {
+    grid-column: 1 / -1;
+  }
+
+  #instruction > main > p,
+  #register > main > p {
+    grid-column: 1 / -1;
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/infographic.css">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <title>Emergency Site</title>
+</head>
+
+<body id="instruction">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html">
+          <img src="img/Logo.png" alt="Strøm logo">
+        </a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="infografik.html">Pakkeliste</a></li>
+        <li><a class="menuItem" href="information.html">Information</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+    <label>
+      <span class="visually-hidden"></span>
+      <input id="theme-toggle" type="checkbox">
+    </label>
+  </header>
+
+  <main>
+    <section class="info-hero">
+      <h1>STRØMAFBRYDELSE - VÆR FORBEREDT!</h1>
+    </section>
+    <section class="info-graphic">
+      <img src="img/infografiksvg.svg" alt="infografik">
+      <button class="hotspot flashlight" aria-label="Lommelygte"></button>
+      <button class="hotspot radio" aria-label="Radio"></button>
+      <button class="hotspot canned-food" aria-label="Dåsemad"></button>
+      <button class="hotspot first-aid" aria-label="Førstehjælpskit"></button>
+      <button class="hotspot water" aria-label="Drikkevand"></button>
+      <button class="hotspot blankets" aria-label="Tæpper"></button>
+      <button class="hotspot batteries" aria-label="Batterier"></button>
+    </section>
+    <section class="info-text">
+      <h2>Pakkeliste</h2>
+      <article>
+        <p class="info-subheadline">Er du pakket og klar til, hvis strømmen skulle gå hos dig? Gennemgå listen
+          nedenunder og få
+          tjekket den af!</p>
+      </article>
+      <aside id="efficiency" class="info-box"></aside>
+      <aside id="requirement" class="info-box"></aside>
+      <section class="checklist">
+        <h2>Tjekliste</h2>
+        <form class="checklist-items">
+          <label><input type="checkbox" id="lommelygte"> Lommelygte</label>
+          <label><input type="checkbox" id="dåsemad"> Dåsemad</label>
+          <label><input type="checkbox" id="drikkevand"> Drikkevand</label>
+          <label><input type="checkbox" id="batterier"> Batterier</label>
+          <label><input type="checkbox" id="tæpper"> Tæpper</label>
+          <label><input type="checkbox" id="førstehjælpskit"> Førstehjælpskit</label>
+          <label><input type="checkbox" id="radio"> Radio</label>
+        </form>
+      </section>
+
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/burger.js"></script>
+</body>
+
+</html>

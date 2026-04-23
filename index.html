@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <title>Emergency Site</title>
+</head>
+
+<body id="frontpage">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html">
+          <img src="img/Logo.png" alt="Strøm logo">
+        </a>
+      </div>
+
+      <ul class="menu">
+        <li><a class="menuItem" href="infografik.html">Klargørelse</a></li>
+        <li><a class="menuItem" href="information.html">Kontakt os</a></li>
+      </ul>
+
+      <button class="burger" type="button" aria-label="Åbn menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+    <label>
+      <span class="visually-hidden"></span>
+      <input id="theme-toggle" type="checkbox">
+    </label>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>STRØMMEN ER GÅET!</h1>
+      <p>HVAD GØR DU?</p>
+    </section>
+
+    <section class="frontpage-grid">
+      <section class="cards-left">
+        <article class="card">
+          <h2>ER DU FORBEREDT?</h2>
+          <img src="img/prepimages.png" alt="Nødforsyninger i en kasse">
+          <a href="infografik.html" class="btn">Se pakkeguide</a>
+        </article>
+
+        <article class="card">
+          <h2>BRUG FOR HJÆLP?</h2>
+          <img src="img/helpimages.png" alt="Personer i kundeservice">
+          <a href="information.html" class="btn">Kontakt os</a>
+        </article>
+      </section>
+
+      <aside class="news-panel">
+        <h2>BREAKING NEWS</h2>
+
+        <article class="news-item">
+          <h3>Køleskabet er nu bare et skab</h3>
+          <p>
+            Når strømmen går, holder køleskabet kun kulden i en begrænset tid.
+            Undgå at åbne det for meget, så maden kan holde sig kold længst muligt.
+          </p>
+          <button class="btn open-popup" data-popup="popup1">Læs mere</button>
+        </article>
+
+        <article class="news-item">
+          <h3>Krise i hjemmet: Kaffemaskinen virker ikke</h3>
+          <p>
+            Et strømsvigt kan hurtigt mærkes, når hverdagens rutiner stopper.
+            Heldigvis kan en simpel backup som instant kaffe eller et gasblus redde morgenen.
+          </p>
+          <button class="btn open-popup" data-popup="popup2">Læs mere</button>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <div class="popup hidden" id="popup1">
+    <div class="popup-box article-popup">
+      <button class="close-popup" aria-label="Luk popup">&times;</button>
+
+      <div class="popup-titlebar">
+        <h2>Breaking: Køleskabet er nu bare et skab</h2>
+      </div>
+
+      <div class="popup-content">
+        <img src="img/popup1.png" alt="Person foran åbent køleskab">
+
+        <div class="popup-intro">
+          <p>
+            I det øjeblik strømmen forsvinder, sker der noget brutalt: køleskabet mister hele sin personlighed. Det
+            går fra at være hjemmets kolde helt til bare at være et skab med en dyr fortid. Og selvom det kan føles
+            fristende at åbne lågen hvert andet minut for at “tjekke situationen”, gør du det kun værre. Kulden
+            forsvinder, maden får det sværere, og du ender i en meget personlig konflikt med en halvvarm yoghurt.
+          </p>
+        </div>
+
+        <div class="popup-columns">
+          <section>
+            <h3>Det Store Lågeproblem</h3>
+            <p>
+              Det største problem under en strømafbrydelse er ikke nødvendigvis selve strømmen. Det er dig, der står og
+              åbner køleskabet konstant. Hver gang døren åbnes, slipper kulden ud, og temperaturen stiger. Så lad være
+              med at lave sightseeing i pålægsskuffen. Du finder ikke nye svar derinde.
+            </p>
+          </section>
+
+          <section>
+            <h3>Maden Begynder at Forhandle</h3>
+            <p>
+              Når kulden forsvinder, begynder nogle madvarer hurtigt at opføre sig mistænkeligt. Mælk, rester, kød og
+              pålæg er ikke typerne, der holder hovedet koldt under pres. De mere robuste varer kan klare sig lidt
+              længere, men det er stadig ikke nu, du skal begynde at stole blindt på lugte, du “tror er okay”.
+            </p>
+          </section>
+
+          <section>
+            <h3>Fryseren er en Kriger</h3>
+            <p>
+              Fryseren klarer sig som regel bedre end køleskabet, især hvis den er godt fyldt. Den holder på kulden
+              længere og kæmper en stille, heroisk kamp for dine pomfritter og frostpizzaer. Men også her gælder reglen:
+              lad døren være. Det her er ikke tidspunktet til at føre tilsyn med dine ærter.
+            </p>
+          </section>
+
+          <section>
+            <h3>Nødevakuering af Ost og Pålæg</h3>
+            <p>
+              Hvis strømmen er væk længe, kan du samle de vigtigste varer i en køletaske med fryseelementer. Det er i
+              bund og grund en VIP-redningsaktion for de mest sarte madvarer. Ikke alt kan reddes, men nogle ting
+              fortjener i det mindste et forsøg.
+            </p>
+          </section>
+
+          <section>
+            <h3>Når Strømmen Kommer Tilbage</h3>
+            <p>
+              Når strømmen endelig vender tilbage, betyder det ikke automatisk, at alt i køleskabet stadig er din ven.
+              Tjek maden. Brug øjne, næse og sund fornuft. Hvis noget lugter forkert, ser trist ud eller føles som en
+              dårlig beslutning, så er det sandsynligvis præcis det. En skive skinke er ikke værd at sætte hele
+              fordøjelsessystemet på spil for.
+            </p>
+          </section>
+
+          <section>
+            <h3>Konklusion</h3>
+            <p>
+              Et køleskab uden strøm er bare et skab med kolde minder. Den bedste strategi er enkel: hold døren lukket,
+              tænk praktisk, og accepter at ikke alle madvarer overlever krisen. Nogle helte redder familien. Andre
+              redder bare smørret. Begge dele tæller.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup hidden" id="popup2">
+    <div class="popup-box article-popup">
+      <button class="close-popup" aria-label="Luk popup">&times;</button>
+
+      <div class="popup-titlebar">
+        <h2>Krise i hjemmet: Kaffemaskinen virker ikke</h2>
+      </div>
+
+      <div class="popup-content">
+        <img src="img/popup2.png" alt="Person foran kaffemaskine">
+
+        <div class="popup-intro">
+          <p>
+            Der findes små problemer i livet, og så findes der morgener uden kaffe. Når strømmen går, finder mange
+            hurtigt ud af, hvor stor en del af deres identitet der åbenbart kører på elektricitet og koffein. Pludselig
+            står kaffemaskinen bare der som en tavs fornærmelse, og hele køkkenet føles som et sted, man ikke længere
+            kan stole på.
+          </p>
+        </div>
+
+        <div class="popup-columns">
+          <section>
+            <h3>Benægtelse-fasen</h3>
+            <p>
+              Det første, mange gør, er naturligvis at trykke på knappen igen. Og igen. Og måske lidt hårdere. Som om
+              kaffemaskinen pludselig får dårlig samvittighed og går i gang af ren skyldfølelse. Det gør den ikke. Den
+              er død, Jim. I hvert fald indtil strømmen kommer tilbage.
+            </p>
+          </section>
+
+          <section>
+            <h3>Morgenen Falder Fra Hinanden</h3>
+            <p>
+              Det er sjældent kun kaffen, der ryger. Elkedel, toaster, mikroovn og alt det andet, der normalt holder
+              sammen på voksenlivet, giver også op samtidig. Det er her, man opdager, hvor tyndt civilisationens lag
+              egentlig er. Ét strømudfald, og pludselig står man og glor på en bagel uden retning i livet.
+            </p>
+          </section>
+
+          <section>
+            <h3>Instant Kaffe Får Sin Hævn</h3>
+            <p>
+              Det er nu, folk med instant kaffe begynder at ligne genier. Det, der normalt bliver set ned på som en
+              trist nødløsning, bliver under en strømafbrydelse til flydende overlevelse. Har du også et gasblus, en
+              termokande eller en anden måde at varme vand på, er du allerede længere fremme end resten af kvarteret.
+            </p>
+          </section>
+
+          <section>
+            <h3>Koffein og Konfliktniveau</h3>
+            <p>
+              Manglen på kaffe er ikke bare et praktisk problem. Det er et socialt problem. Uden koffein stiger risikoen
+              markant for unødigt hårde svar, dramatisk sukkertrang og konflikter med køkkenskuffer, der egentlig ikke
+              har gjort noget galt. En simpel backup-plan kan derfor være forskellen mellem rolig krisehåndtering og
+              fuld intern nedsmeltning klokken 07:12.
+            </p>
+          </section>
+
+          <section>
+            <h3>Lav en Plan, Før Du Bliver Ubehagelig</h3>
+            <p>
+              Det smarteste er at tænke over det på forhånd. Hav noget, der kan drikkes uden strøm. Hav noget mad, der
+              ikke skal varmes. Hav lys. Hav en opladet powerbank. Og vigtigst: hav en løsning, før du står der
+              halvvågen og opdager, at hele din personlighed åbenbart kræver 230 volt.
+            </p>
+          </section>
+
+          <section>
+            <h3>Konklusion</h3>
+            <p>
+              Når kaffemaskinen dør, mærker man hurtigt, hvor skrøbelig hverdagen egentlig er. Men krisen behøver ikke
+              blive total. Med lidt forberedelse, en nødløsning og måske en smule ydmyghed kan du komme igennem morgenen
+              uden strøm, uden kaffe og uden at blive dagens største katastrofe.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="js/burger.js"></script>
+<script src="js/popup.js"></script>
+
+</html>

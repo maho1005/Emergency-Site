@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html">
+          <img src="img/Logo.png" alt="Strøm logo">
+        </a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="infografik.html">Klargørelse</a></li>
+        <li><a class="menuItem" href="information.html">Information</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+    <label>
+      <span class="visually-hidden"></span>
+      <input id="theme-toggle" type="checkbox">
+    </label>
+  </header>
+
+  <main>
+    <section class="formularhero">
+      <h1>Har du brug for hjælp?</h1>
+    </section>
+    <section id="form-summary">
+      <h2>Kontaktformular</h2>
+      <p>Har du spørgsmål til strømafbrydelse eller brug for hjælp, kan du skrive til os her. Udfyld formularen, så
+        kontakter vi dig hurtigst muligt.</p>
+      <article>
+        <form class="contact-form">
+          <label for="name">Navn</label>
+          <input type="text" id="name" name="name" placeholder="Skriv dit navn">
+
+          <label for="age">Alder</label>
+          <input type="number" id="age" name="age" placeholder="Din alder">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Skriv din email">
+
+          <label for="message">Spørgsmål</label>
+          <textarea id="message" name="message" rows="4" placeholder="Skriv dit spørgsmål"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </article>
+    </section>
+  </main>
+  <script src="js/burger.js"></script>
+</body>
+
+</html>
